@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    // for typeorm to define columns without type
+    "emitDecoratorMetadata": true,
+    "module": "CommonJS",
+    // Import non-ES modules as default imports.
+    "esModuleInterop": true,
+    // Target version of ECMAScript.
+    "target": "ES2019",
+    // Process & infer types from .js files.
+    "allowJs": false,
+    // Enable strictNullChecks & noImplicitAny.
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "noImplicitThis": false,
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Import .json files
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "typeRoots": ["./src/common/types", "./node_modules/@types"],
+    "types": ["node"]
+  },
+  "include": ["src/**/*"]
+}
